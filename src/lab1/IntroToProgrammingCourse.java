@@ -19,22 +19,9 @@ public class IntroToProgrammingCourse extends IntroJavaCourse {
         this.setCourseNumber(courseNumber);
     }
 
-
-    public final void setCourseNumber(String courseNumber) {
-        if(courseNumber == null || courseNumber.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseNumber cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseNumber = courseNumber;
+    @Override
+    public void setPrerequisites(String prerequisites) {
+        System.out.println("This course has no prerequisites.");
     }
     
-    public final void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseName = courseName;
-    }   
 }
