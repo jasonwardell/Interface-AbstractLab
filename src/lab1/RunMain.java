@@ -10,8 +10,11 @@ public class RunMain {
         
         ProgramCompletion ajc = new AdvancedJavaCourse();
         ProgramCompletion ijc = new IntroJavaCourse();
-        ProgramCompletion itpc = new IntroToProgrammingCourse();
-       
+        ProgramCompletion itpc = new IntroToProgrammingCourse();    
         
+        ajc.getCourseName();
+        ijc.getCourseNumber();
+        itpc.getCredits();
+                
     }
 }
